@@ -1,16 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Revised Figure 8 for the manuscript:
-'From Efficiency Tool to System Enabler: The Role of Market Responsiveness in Smart Manufacturing Transformation'
-
-This script reproduces Figure 8, which illustrates the impact of market responsiveness 
-to systemic value (parameter β) on system-level dynamics. Two scenarios are compared:
-High Market Responsiveness (β = 2.0) and Low Market Responsiveness (β = 1.0).
-
-Author: [Your Name]
-Date: 2025-12-09
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -98,3 +85,4 @@ def figure_8_market_responsiveness():
 
 if __name__ == "__main__":
     figure_8_market_responsiveness()
+
