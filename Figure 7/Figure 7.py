@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Plot Figure 7: Nonlinear Demand Response to Systemic Value
-Uses second-order difference (acceleration) to detect the critical threshold.
-This method is robust for detecting the onset of rapid growth in step-like transitions.
-
-Author: [Your Name]
-Date: 2026-01-18
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -80,3 +70,4 @@ fig.tight_layout()
 save_plot(fig, 'fig_pathway3_svi_demand')
 
 print("✅ Figure 7 generated with data-driven threshold.")
+
