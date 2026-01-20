@@ -1,16 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Figure 10: Comparison of Governance Effectiveness under Different Policy Regimes
-
-This script generates Figure 10 for journal submission, comparing three policy strategies:
-(1) Static Subsidy, (2) Dynamic Fund, and (3) Mixed Policy.
-Time steps correspond to months from January 2018 to August 2059.
-Policy milestones (2030 Carbon Peak, 2060 Carbon Neutrality) are annotated.
-
-Author: [Your Name]
-Date: [Submission Date]
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -107,4 +94,5 @@ def figure_10_policy_comparison():
     save_plot(fig, 'fig10_policy_comparison_final')
 
 if __name__ == "__main__":
+
     figure_10_policy_comparison()
