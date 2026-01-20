@@ -1,20 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Figure 6: Spatial Evolution of Manufacturing Systems
-This script visualizes the spatial evolution using pre-generated spatial data matrices
-from the following files:
-
-- spatial_data_2018 1=green 0=non-green.csv
-- spatial_data_2026 1=green 0=non-green.csv
-- spatial_data_2043 1=green 0=non-green.csv
-- spatial_data_2059 1=green 0=non-green.csv
-
-Each file contains a 33×33 matrix representing green (1) and non-green (0) regions.
-
-Author: [Your Name]
-Date: [Insert Date]
-"""
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -71,3 +54,4 @@ def figure_6_spatial_evolution_from_csv():
 
 if __name__ == "__main__":
     figure_6_spatial_evolution_from_csv()
+
