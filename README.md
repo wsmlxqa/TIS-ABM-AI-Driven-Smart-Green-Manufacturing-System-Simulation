@@ -1,73 +1,67 @@
- From Efficiency Tool to System Enabler: An Evolutionary Study of AI-Driven Transformation in Smart Manufacturing Systems
+From Efficiency Tool to System Enabler: An Evolutionary Study of AI-Driven Transformation in Smart Manufacturing Systems
 
-This repository contains the complete NetLogo source code, data, figures, and documentation for the spatially embedded agent-based model developed in the paper:
+The repository contains a comprehensive and well-documented agent-based model implemented in NetLogo. It studies how artificial intelligence evolves from a simple efficiency tool at the firm level into a core enabler of smart, green, and resilient manufacturing ecosystems. The work is grounded in the Technology–Institution–System (TIS) co-evolutionary framework and complex adaptive systems theory.
+Here are the main highlights of the model and repository:
 
-From Efficiency Tool to System Enabler: An Evolutionary Study of AI-Driven Transformation in Smart Manufacturing Systems  
-International Journal of Production Economics (under review / forthcoming).
+Main components of the simulation
 
-The model implements a Technology–Institution–System (TIS) co-evolutionary framework grounded in complex adaptive systems (CAS) theory. It explores how artificial intelligence (AI) evolves from a firm-level efficiency tool into a genuine system enabler, driving the emergence of self-organizing, resilient, and sustainable smart manufacturing ecosystems.
+1.Heterogeneous adaptive agents: 50 manufacturers + 100 suppliers
+2.Government with dynamic fiscal and policy instruments
+3.33×33 toroidal spatial grid (inspired by real clusters like G60 Sci-Tech Corridor)
+4.AI capability develops across three generations (G1 → G2 → G3)
 
- Overview
+Core mechanisms
 
-The simulation features four interacting components:
-- Manufacturers and Suppliers as heterogeneous adaptive agents
-- Government implementing dynamic fiscal and policy mechanisms
-- Geographic Environment on a 33×33 toroidal grid (scaled to real-world clusters such as the G60 Sci-Tech Corridor)
+1.Distance-decaying knowledge spillovers
+2.Green zone certification and diffusion
+3.Counter-cyclical transformation fund with phased subsidy reduction
+4.Emergent System Value Index (SVI) that drives nonlinear market demand
 
-Key mechanisms include:
-- AI capability evolution across generations (G1–G3)
-- Distance-decaying knowledge spillovers
-- Green zone diffusion and certification
-- Counter-cyclical transformation funds with phased subsidy attenuation
-- Nonlinear market demand driven by the emergent System Value Index (SVI)
+Five validated macro-patterns (P1–P4 + boundary condition)
 
-The model reproduces five macro-patterns validated against Chinese smart manufacturing clusters: S-curve adoption, spatial clustering, nonlinear demand takeoff, triple-buffer resilience, and boundary stagnation under weak conditions.
+1.S-curve adoption of AI and green technologies
+2.Spatial evolution: point → cluster → network
+3.Nonlinear takeoff of market demand after SVI threshold
+4.Triple-buffer resilience against external shocks
+5.Stagnation / low-level equilibrium when key conditions are weak
 
-This repository ensures full transparency and reproducibility of the published research.
+Real-world alignment
 
- Repository Contents
+The model reproduces patterns observed in leading Chinese smart manufacturing cases:
 
-- `code/`  
-  Main NetLogo model file (`TIS_ABM.nlogo`)
-- `data/`  
-  Initialization parameters, sample outputs, and validation datasets
-- `figures/`  
-  Simulation visualizations (spatial evolution, trajectory plots, policy comparisons)
-- `docs/`  
-  Supplementary materials aligned with paper appendices
+1.Haier COSMOPlat (S-curve adoption)
+2.G60 Sci-Tech Corridor & Yangtze River Delta EV cluster (spatial clustering)
+3.CATL (nonlinear demand surge)
+4.Sany Heavy Industry Lighthouse Factory (pandemic resilience)
+5.Legacy regions without strong anchor firms or spillovers (stagnation)
 
- Getting Started
+How to run the model
 
- Prerequisites
-- NetLogo 6.4.0 or higher[](https://ccl.northwestern.edu/netlogo/)
+Install NetLogo 6.4.0 or newer
+Clone the repository:
+git clone https://github.com/wsmlxqa/TIS-ABM-AI-Driven-Smart-Green-Manufacturing-System-Simulation.git
+Open code/TIS_ABM.nlogo
+Press Setup (uses baseline parameters from Table 2)
+Press Go (runs 500 ticks ≈ 40 years, 1 tick = 1 month)
 
- Installation & Running
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/wsmlxqa/TIE-ABM-AI-Driven-Smart-Green-Manufacturing-system-Simulation.git
-   Open code/TIS_ABM.nlogo in NetLogo.
-2.Press Setup to initialize:
-    50 manufacturers, 100 suppliers
-    33×33 grid with initial green patches
-    Baseline parameters (see Table 2 in the paper)
-4.Press Go to run for 500 ticks (~40 years, 1 tick = 1 month).
-5.Monitor key indicators or export data via BehaviorSpace for analysis.
+Key experiments you can easily replicate
 
-Key Scenarios (Section 4 of the paper)
+1.Baseline run (dynamic governance enabled) → shows Pathway 1, 2, 3
+2.Adjust spillover-radius or spillover-intensity → test spatial clustering strength
+3.Change demand-svi-elasticity-β → compare linear vs. nonlinear demand growth
+4.Switch between static subsidies, pure dynamic fund, or hybrid policy regime
+5.Apply external shock (25% competitiveness drop at tick 200) → test resilience
 
-  Baseline: Natural co-evolution with dynamic governance
-  Policy comparison: Static subsidies vs. pure dynamic fund vs. hybrid regime
-  External shock: 25% competitiveness loss at t=200 to test resilience
-  Spatial evolution: Point → cluster → network diffusion of green zones
+Repository contents summary
 
-Adjust sliders (e.g., green-subsidy, carbon-tax, demand-svi-elasticity-β) to replicate scenarios.
+1.Complete NetLogo model (TIS_ABM.nlogo)
+2.All figures (1–10) with data (.csv) and Python plotting scripts
+3.Sensitivity analysis (Appendix A.1–A.3 .xlsx)
+4.Parameter and result tables (Table 1–8, D.12 .xlsx)
+5.Graphical abstract & highlights documents
+6.Pseudocode and algorithm description (PDF)
+7.video (vedio.mp4)
 
-Validation & Real-World Cases
-Simulation patterns are validated through pattern-oriented modelling against:
-  Haier COSMOPlat (Haier Smart Home Co., Ltd., China) – S-curve platform growth
-  Yangtze River Delta EV cluster & G60 Sci-Tech Corridor – Point-to-cluster-to-network spatial diffusion
-  CATL (Contemporary Amperex Technology Co., Limited, China) – Nonlinear demand takeoff
-  Sany Heavy Industry Changsha Lighthouse Factory (Sany Heavy Industry Co., Ltd., China) – Triple-buffer resilience during 2020–2022 pandemic
+This model provides a solid, reproducible platform for studying AI-driven industrial transformation, especially in the context of smart and green manufacturing clusters. It is particularly valuable for researchers interested in co-evolutionary dynamics, spatial economics, industrial policy design, and resilience under uncertainty.
 
-Robustness & Sensitivity
-Model robustness was assessed via multiple runs with varied random seeds and ±10% parameter perturbations (see Appendix: Sensitivity Analysis). All five macro-patterns remain qualitatively stable.
+If you have specific questions about running experiments, interpreting certain parameters, modifying the model, or comparing results with real cases, feel free to ask!
