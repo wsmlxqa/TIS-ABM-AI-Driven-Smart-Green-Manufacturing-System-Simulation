@@ -1,16 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Figure 9: System Resilience and Recovery Capability under External Shock
-
-This script generates Figure 9 for submission to a peer-reviewed journal.
-It compares system dynamics with and without an external shock (e.g., pandemic),
-including policy milestones (2030 Carbon Peak, 2060 Carbon Neutrality) and
-a labeled shock event at t=200 (≈2034).
-
-Author: [Your Name]
-Date: [Submission Date]
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -122,3 +109,4 @@ def figure_9_shock_response():
 
 if __name__ == "__main__":
     figure_9_shock_response()
+
