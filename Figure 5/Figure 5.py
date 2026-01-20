@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Figure for Pathway 2: Knowledge Diffusion & Spatial Clustering (Macro Evidence)
-This figure illustrates the "point → cluster → network" evolution based on aggregate indicators.
-
-Author: [Your Name]
-Date: 2025-12-10
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -120,3 +111,4 @@ add_calendar_year_axis(ax2)
 plt.tight_layout(rect=[0, 0.02, 1, 0.93])
 save_plot(fig, 'fig_pathway2_macro_evidence')
 print("Figure for Pathway 2 successfully generated and saved.")
+
