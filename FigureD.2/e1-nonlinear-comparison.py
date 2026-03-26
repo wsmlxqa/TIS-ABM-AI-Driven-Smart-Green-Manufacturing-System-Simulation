@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Title: AI-driven Transformation in Smart Manufacturing Systems
-Description: Replication code for Figure \label{fig:e1-nonlinear-comparison}
-Comparison of Linear vs Exponential Upgrade Costs (Patterns P1–P4)
-Data Sources: linear_cost.csv, exponential_cost.csv
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
